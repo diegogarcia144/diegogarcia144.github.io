@@ -1,0 +1,234 @@
+* {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-family: 'Dongle', 'Bebas Neue', sans-serif;
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-w-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.movement {
+    width: 20rem;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-w-logo {
+        flex-direction: row-reverse;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-left: 1rem;
+    }
+}
+
+.movement {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 24rem;
+    margin: 2rem auto;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    top: 80px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.3s ease;
+    height: 50px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 1rem;
+}
+
+.navbar ul li a {
+    font-size: 2rem;
+    border-radius: 3rem;
+    padding: 0.5rem;
+    transition: 0.2s;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    color: black;
+    background: white;
+    margin: 0;
+}
+
+.hamburger {
+    display: none;
+    margin-right: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+        padding: 1rem;
+    }
+
+    .navbar ul li {
+        margin: 0;
+    }
+
+    .navbar.active ul {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .products{
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+
+    }
+
+    .products .card{
+        margin-bottom: 1rem;
+    }
+}
+
+.products-tittle h1 {
+    margin: 3rem;
+    font-size: 3.5rem;
+}
+
+.products {
+    display: flex;
+    align-items: flex-start;
+    gap: 5rem;
+    margin: 5rem;
+    transition: all 0.5s;
+}
+
+.products:hover .card{
+    opacity: .5;
+    filter: blur(3px);
+}
+
+.products .card:hover{
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(1.15);
+    transition: 0.5s;
+}
+
+.products img {
+    width: 15rem;
+    border-radius: 15px;
+} 
+
+.products h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.logo { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+.logo img {
+    width: 4rem;
+    height: 4rem;   
+    margin: 0;
+    padding: 0;
+}
+
+.daniel-marulanda2023{
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.payment-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.payment-icons img {
+    width: 2rem;
+    margin: 0.5rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 0rem;
+}
+
+.socials img {
+    width: 2rem;
+    margin: 1rem;
+}

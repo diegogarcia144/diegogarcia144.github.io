@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MOVEMENT CLUB</title>
+        <link rel="stylesheet" href="./styles_catalogue.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dongle:wght@300;700&display=swap">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="shortcut icon" type="image/png" href="path/to/your/icon.png">
+    </head>
+<body class="body">
+    <div class="navbar-w-logo">
+        <img src="/images/movement.png" class="movement" alt="movement">
+        <header>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/index.html" class="active">INICIO</a></li>
+                    <li><a href="/catalogue/catalogue.html">PRIMERA COLECCION</a></li>
+                    <li><a href="/contact/contact.html">CONTACTO</a></li>
+                    <li><a href="#"><i class="ri-user-4-fill"></i>INGRESAR</a></li>
+                    <li><a href="#">REGISTRARSE</a></li>
+                </ul>
+            </nav>
+        </header>
+        <script>
+            var hamburger = document.querySelector(".hamburger");
+            var navbar = document.querySelector(".navbar");
+    
+            hamburger.onclick = function() {
+            navbar.classList.toggle("active");
+        }
+        </script>
+    <main>
+        <section>
+            <div class= "products-tittle">
+            <h1>PRODUCTOS</h1>
+            </div>
+        <div class="products">
+            <div class="card">
+                <div class="soul">
+                    <img src="/images/mariposa.jpg" alt="beautiful-soul-front">
+                    <h3>Beautiful soul</h3>
+                    <h3>$60.000,00 COP</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="murder">
+                    <img src="/images/murder-frente.jpg" alt="self-destructive-front">
+                    <h3>Self destructive</h3>
+                    <h3>$60.000,00 COP</h3>
+                </div>
+            </div>
+        </div>
+        </section>  
+    </main>
+    <footer>
+        <div class="logo">
+            <img src="/images/logo.png" alt="logo">
+            </div>
+            <div class="socials">
+                <a href="https://www.instagram.com/movement___1/" target="_blank"><img src="/images/instagram.png" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@movement__1" target="_blank"><img src="/images/tiktok.png" alt="tiktok"></a>
+            </div>
+        <div class="payment-icons">
+            <img src="/images/visa.png" alt="Visa">
+            <img src="/images/mastercard.png" alt="Mastercard">
+            <img src="/images/paypal.png" alt="PayPal">
+            <img src="/images/AMEX.png" alt="American Express">
+        </div>
+        <div class="daniel-marulanda2023">
+        <p>&copy; 2023, MOVEMENT by Daniel Marulanda</p>
+        </div>
+    </footer>
+</body>
+</html>

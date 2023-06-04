@@ -1,0 +1,299 @@
+* {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-family: 'Dongle', 'Bebas Neue', sans-serif;
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-w-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.movement {
+    width: 20rem;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-w-logo {
+        flex-direction: row-reverse;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-left: 1rem;
+    }
+}
+
+.movement {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 24rem;
+    margin: 2rem auto;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    top: 80px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.3s ease;
+    height: 50px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 1rem;
+}
+
+.navbar ul li a {
+    font-size: 2rem;
+    border-radius: 3rem;
+    padding: 0.5rem;
+    transition: 0.2s;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    color: black;
+    background: white;
+    margin: 0;
+}
+
+.hamburger {
+    display: none;
+    margin-right: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+        padding: 1rem;
+    }
+
+    .navbar ul li {
+        margin: 0;
+    }
+
+    .navbar.active ul {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+    }
+}
+
+.photos-facheritos {
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin: 0;
+}
+
+.photos-facheritos img {
+    width: 40rem;
+    height: 40rem;
+    margin: 0%;
+}
+
+@media only screen and (max-width: 768px) {
+    .photos-facheritos {
+        width: 40rem;
+        display: block;
+        margin: 0;
+    }
+}
+
+.tittle-catalogue h1 {
+    margin: 1rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 7rem;
+    margin-top: 0rem;
+}
+
+.products .soul,
+.products .murder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products img {
+    width: 20rem;
+} 
+
+.products h3 {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .products {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    }
+
+    .products .soul,
+    .products .murder {
+        margin-top: 2rem;
+    }
+}
+
+.logo { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+.logo img {
+    width: 4rem;
+    height: 4rem;   
+    margin: 0;
+    padding: 0;
+}
+
+.daniel-marulanda2023{
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.payment-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.payment-icons img {
+    width: 2rem;
+    margin: 0.5rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 0rem;
+}
+
+.socials img {
+    width: 2rem;
+    margin: 1rem;
+}
+
+.article {
+    position: relative;
+    width: 20rem;
+    transition: all 0.3s ease;
+}
+
+.article img:first-child {
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%;
+    opacity: 1;
+}
+
+.article img:last-child {
+    position: absolute;
+    width: 20rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    transform: translateY(25%);
+    opacity: 0; 
+    transition: all 0.3s ease;
+}
+
+.article:hover img:last-child {
+    opacity: 1; 
+    transform: translateY(0%);
+}
+
+.article::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.article:hover::before {
+    opacity: 1;
+}
+
+.article:hover {
+    transform: perspective(15rem) rotateX(-5%) translateZ(0);
+}

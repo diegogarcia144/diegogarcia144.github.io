@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MOVEMENT CLUB</title>
+        <link rel="stylesheet" href="./styles_contact.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dongle:wght@300;700&display=swap">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="shortcut icon" type="image/png" href="path/to/your/icon.png">
+    </head>
+<body>
+    <div class="navbar-w-logo">
+    <img src="/images/movement.png" class="movement" alt="movement">
+    <header>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/index.html" class="active">INICIO</a></li>
+                <li><a href="/catalogue/catalogue.html">PRIMERA COLECCION</a></li>
+                <li><a href="/contact/contact.html">CONTACTO</a></li>
+                <li><a href="#"><i class="ri-user-4-fill"></i>INGRESAR</a></li>
+                <li><a href="#">REGISTRARSE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+var hamburger = document.querySelector(".hamburger");
+var navbar = document.querySelector(".navbar");
+
+hamburger.onclick = function() {
+    navbar.classList.toggle("active");
+}
+    </script>
+    <div class="container">
+        <div class="wrapper">
+            <h1 class="title">Contacto</h1>
+            <div class="form">
+                <div class="Input_field">
+                    <label>Nombre</label>
+                    <input type="text" class="input">
+                </div>
+                <div class="Input_field">
+                    <label>Correo Electronico</label>
+                    <input type="text" class="input">
+                </div>
+                <div class="Input_field">
+                    <label>Numero de telefono</label>
+                    <input type="text" class="input">
+                </div>
+                <div class="Input_field">
+                    <label>Comentario</label>
+                    <textarea class="input"></textarea>
+                </div>
+                <div class="Input_field terms">
+                    <label class="check">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <p id="NotiCorreo">Desea recibir notificaciones a su correo (promociones, nuevos lanzamientos, etc)</p>
+                </div>
+                <div class="Input_field">
+                    <input type="submit" value="Enviar" class="btn">
+                </div>
+            </div>
+            
+        </div>
+        
+
+        <div class="mapcont" alt="ubicacion">
+            <h1 id="lugar">¿Donde Estamos Ubicados?</h1>
+            <div class="ubicacion">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.92539981862268!2d-75.60524906377348!3d6.156678681700325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4683cf617a0a85%3A0x371d75d45d1017ae!2sCl%2056%20Sur%20%2342-70%2C%20Envigado%2C%20Sabaneta%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1684969729679!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="logo">
+            <img src="/images/logo.png" alt="logo">
+            </div>
+            <div class="socials">
+                <a href="https://www.instagram.com/movement___1/" target="_blank"><img src="/images/instagram.png" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@movement__1" target="_blank"><img src="/images/tiktok.png" alt="tiktok"></a>
+            </div>
+        <div class="payment-icons">
+            <img src="/images/visa.png" alt="Visa">
+            <img src="/images/mastercard.png" alt="Mastercard">
+            <img src="/images/paypal.png" alt="PayPal">
+            <img src="/images/AMEX.png" alt="American Express">
+        </div>
+        <div class="daniel-marulanda2023">
+        <p>&copy; 2023, MOVEMENT by Daniel Marulanda</p>
+        </div>
+    </footer>
+</body>
+</html>
